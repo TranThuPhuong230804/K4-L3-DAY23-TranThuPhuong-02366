@@ -15,10 +15,10 @@ reports/*.json
 !reports/failover-events.jsonl
 !reports/health-events.jsonl
 !reports/replication.jsonl
+!reports/runbook-run.jsonl
 
 # File tam do test/thu nghiem sinh ra (khong phai bang chung)
 reports/_*.jsonl
-reports/runbook-run.jsonl
 
 # Python
 __pycache__/

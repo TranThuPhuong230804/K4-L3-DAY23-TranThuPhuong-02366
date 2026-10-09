@@ -1,0 +1,5 @@
+{"ts": 1791546785.862771, "iso": "2026-10-09T11:53:05", "step": "1_verify_target", "target": "b", "ok": true, "state": {"region": "b", "pool_state": "warm", "weights": false, "count": 0, "latest_doc_ts": null, "ts": 1791546785.8616552}}
+{"ts": 1791546785.9568272, "iso": "2026-10-09T11:53:05", "step": "2_restore_snapshot", "target": "b", "backend": "fs", "ok": true, "snapshot_at": 1791546754.996144, "restored_at": 1791546785.9371583, "rpo_seconds": 29.86, "docs_lost": 14, "embed_model_version": "embed-model=vi-e5-base@v3"}
+{"ts": 1791546785.9622211, "iso": "2026-10-09T11:53:05", "step": "3_scale_pool", "target": "b", "ok": true, "pool_state": "full"}
+{"ts": 1791546792.1477904, "iso": "2026-10-09T11:53:12", "step": "4_wait_ready", "target": "b", "ok": true, "attempts": 12, "waited_s": 6.181, "readiness": {"region": "b", "ready": true, "reasons": [], "pool_state": "full", "vectors": {"count": 201, "latest_doc_ts": 1791546754.978559}, "ts": 1791546792.1469388}}
+{"ts": 1791546792.1955826, "iso": "2026-10-09T11:53:12", "step": "5_dns_cutover", "target": "b", "previous": "a", "active": "b", "ok": true}
